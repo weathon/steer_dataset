@@ -42,7 +42,7 @@ def main():
 
     with open('noun_cooccurrences.csv', 'a') as f:
         f.write("noun1,noun2,count\n")
-        for (noun1, noun2), count in cooccurrences.most_common(1000):
+        for (noun1, noun2), count in cooccurrences.most_common(5000):
             print(f"{noun1}, {noun2}: {count}")
             f.write(f"{noun1},{noun2},{count}\n")
 
